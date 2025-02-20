@@ -10,7 +10,7 @@ public class RotationAlignment : MonoBehaviour
     public void Awake()
     {
         Input.compass.enabled = true;
-        Input.location.Start();
+        Input.location.Start(10, 0.01f);
     }
     // Update is called once per frame
     void Update()
