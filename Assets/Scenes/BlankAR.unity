@@ -6251,7 +6251,6 @@ GameObject:
   - component: {fileID: 986959092}
   - component: {fileID: 986959094}
   - component: {fileID: 986959093}
-  - component: {fileID: 986959095}
   m_Layer: 0
   m_Name: TopDownCamera
   m_TagString: Untagged
@@ -6333,19 +6332,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &986959095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986959091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 895bc9bf4ec5ab24e8459bab1c3554dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TextMeshPro: {fileID: 2124900}
 --- !u!1 &993498090
 GameObject:
   m_ObjectHideFlags: 0
@@ -10721,6 +10707,7 @@ GameObject:
   - component: {fileID: 1583450559}
   - component: {fileID: 1583450558}
   - component: {fileID: 1583450561}
+  - component: {fileID: 1583450562}
   m_Layer: 0
   m_Name: Indicator
   m_TagString: Untagged
@@ -10885,6 +10872,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topDownCamera: {fileID: 986959094}
   navTargetObject: {fileID: 1362360534}
+--- !u!114 &1583450562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583450557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895bc9bf4ec5ab24e8459bab1c3554dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TextMeshPro: {fileID: 2124900}
 --- !u!1 &1614992112
 GameObject:
   m_ObjectHideFlags: 0
@@ -13796,3 +13796,4 @@ SceneRoots:
   - {fileID: 1583450560}
   - {fileID: 476030746}
   - {fileID: 719768478}
+  - {fileID: 1722319099}
