@@ -5,7 +5,7 @@ using TMPro;
 
 public class RotationAlignment : MonoBehaviour
 {
-    [SerializeField] private TMPro.TextMeshPro m_TextMeshPro;
+    [SerializeField] private TextMeshProUGUI m_TextMeshPro;
 
     public void Awake()
     {
