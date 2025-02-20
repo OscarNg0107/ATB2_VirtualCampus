@@ -21,7 +21,8 @@ public class RotationAlignment : MonoBehaviour
     private void SetSelfRotation() 
     {
         Vector3 rot = this.transform.eulerAngles;
-        rot.z = -Input.compass.magneticHeading;
+        float cameraRot = Input.compass.magneticHeading * Mathf.Deg2Rad; // convert from degree to radian
+        rot.z = -cameraRot;
         this.transform.eulerAngles = rot;
         m_TextMeshPro.text = Input.compass.magneticHeading.ToString();
     }
