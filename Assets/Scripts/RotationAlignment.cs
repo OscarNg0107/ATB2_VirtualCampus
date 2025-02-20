@@ -7,11 +7,15 @@ public class RotationAlignment : MonoBehaviour
 {
     [SerializeField] private TMPro.TextMeshPro m_TextMeshPro;
 
+    public void Awake()
+    {
+        Input.compass.enabled = true;
+        Input.location.Start();
+    }
     // Update is called once per frame
     void Update()
     {
         SetSelfRotation();
-
     }
 
     private void SetSelfRotation() 
