@@ -7,18 +7,23 @@ public class RotationAlignment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.eulerAngles = new Vector3(
-            gameObject.transform.eulerAngles.x,
-            AlignWithWorldNorth(),
-            gameObject.transform.eulerAngles.z);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        SetSelfRotation();
     }
-    public float AlignWithWorldNorth()
+
+    private void SetSelfRotation() { 
+           gameObject.transform.eulerAngles = new Vector3(
+               gameObject.transform.eulerAngles.x,
+               AlignWithWorldNorth(),
+               gameObject.transform.eulerAngles.z);
+    }
+
+    private float AlignWithWorldNorth()
     {
         // Get the device's current compass heading relative to true north
         float compassHeading = Input.compass.trueHeading;
