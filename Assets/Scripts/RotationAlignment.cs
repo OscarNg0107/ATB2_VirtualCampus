@@ -32,15 +32,13 @@ public class RotationAlignment : MonoBehaviour
     {
         if (!doOnce)
         {
-            doThisSHit();
+            FindStartRotation();
         }
         m_TextMeshPro.text = Input.compass.magneticHeading.ToString();
-        Debug.Log("y rotation: " + aRSessionOrigin.transform.eulerAngles.y);
-        //SetSelfRotation();
-        //Debug.Log(aRCamera.transform.eulerAngles.y);
+        //Debug.Log("y rotation: " + aRSessionOrigin.transform.eulerAngles.y);
     }
 
-    void doThisSHit() {
+    void FindStartRotation() {
 
         if(Input.compass.magneticHeading != 0)
         {
