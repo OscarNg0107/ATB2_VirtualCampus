@@ -5,10 +5,9 @@ using UnityEngine.AI;
 
 public class SetNavigationTarget : MonoBehaviour
 {
-    [SerializeField]
-    private Camera topDownCamera;
-    [SerializeField]
-    private GameObject navTargetObject;
+    //[SerializeField]private Camera topDownCamera;
+
+    [SerializeField] private GameObject navTargetObject;
 
     private NavMeshPath path; //curent calculated path
     private LineRenderer line; // linerenderer to display path
