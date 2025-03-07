@@ -57,7 +57,6 @@ public class SetNavigationTarget : MonoBehaviour
         if(currentTarget != null)
         {
             targetPos = currentTarget.targetGO.transform.position;
-            Debug.Log(currentTarget.targetName);
         }
 
     }
