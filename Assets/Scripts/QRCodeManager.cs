@@ -13,6 +13,8 @@ public class QRCodeManager : MonoBehaviour
     ARTrackedImageManager m_TrackedImageManager;
     [SerializeField]
     List<NavigationTarget> navigationTargets = new List<NavigationTarget>();
+    [SerializeField]
+    private Camera MapCamera;
 
     void OnEnable() => m_TrackedImageManager.trackedImagesChanged += OnChanged;
 
@@ -71,7 +73,14 @@ public class QRCodeManager : MonoBehaviour
             //Add offset for recentering
             sessionOrigin.transform.position = currentTarget.targetGO.transform.position;
             sessionOrigin.transform.rotation = currentTarget.targetGO.transform.rotation;
+            resetCamePos();
         }
     }
 
+    public void resetCamePos()
+    {
+        MapCamera.transform.position = new Vector3(sessionOrigin.transform.position.x,
+                                                       5,
+                                                       sessionOrigin.transform.position.z);
+    }
 }
