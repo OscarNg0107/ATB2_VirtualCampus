@@ -48,7 +48,7 @@ public class RotationAlignment : MonoBehaviour
                 aRSessionOrigin.transform.eulerAngles.x,
                 magneticHead,
                 aRSessionOrigin.transform.eulerAngles.z);
-            Debug.Log("y rotation: " + aRSessionOrigin.transform.eulerAngles.y);
+            //Debug.Log("y rotation: " + aRSessionOrigin.transform.eulerAngles.y);
             doOnce = true;
         }
         
