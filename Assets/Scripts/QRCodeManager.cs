@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.UI;
 
 public class QRCodeManager : MonoBehaviour
 {
@@ -16,6 +17,33 @@ public class QRCodeManager : MonoBehaviour
     [SerializeField]
     private Camera MapCamera;
 
+    [SerializeField] private GameObject MapPanel;
+    [SerializeField] private GameObject HidenMap;
+
+    private Color alphaColor;
+    private bool firstDiscover = false;
+
+    private void Start()
+    {
+        alphaColor = HidenMap.GetComponent<MeshRenderer>().material.color;
+    }
+
+    IEnumerator FadeOut()
+    {
+        for(float f = 1.0f; f>= - 0.05f; f -= 0.05f)
+        {
+            alphaColor.a = f;
+            HidenMap.GetComponent<MeshRenderer>().material.color = alphaColor;
+            Debug.Log(f);
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+    private void StartFading()
+    {
+        StartCoroutine("FadeOut");
+    }
+
     void OnEnable() => m_TrackedImageManager.trackedImagesChanged += OnChanged;
 
     void OnDisable() => m_TrackedImageManager.trackedImagesChanged -= OnChanged;
@@ -28,12 +56,22 @@ public class QRCodeManager : MonoBehaviour
             switch (newImage.referenceImage.name)
             {
                 case "NorthEntrance":
-                    Debug.Log(newImage.referenceImage.name);
+                    
                     SetQrCodeLocTarget("NorthEntrance");
                     break;
 
                 case "SouthEntrance":
                     SetQrCodeLocTarget("SouthEntrance");
+                    break;
+
+                case "Reception":
+                    SetQrCodeLocTarget("Reception");
+                    if (!firstDiscover)
+                    {
+                        MapPanel.SetActive(true);
+                        StartFading();
+                        firstDiscover = true;
+                    }
                     break;
             }
         }

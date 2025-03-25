@@ -7,6 +7,7 @@ public class UserInputMap : MonoBehaviour
     [SerializeField] private Camera TopdownCamera;
     [SerializeField] private float zoomOutMax = 20;
     [SerializeField] private float zoomOutMin = 7;
+    [SerializeField] private float zoomSpeed = 10.0f;
     [SerializeField] private SimpleTouchController rightController;
     [SerializeField] private float speedProgressiveLook = 300f;
 
@@ -87,7 +88,7 @@ public class UserInputMap : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            zoom(difference * 0.01f);
+            zoom(difference * Time.deltaTime* zoomSpeed);
             cameraHalfSize = TopdownCamera.orthographicSize;
         }
     }
