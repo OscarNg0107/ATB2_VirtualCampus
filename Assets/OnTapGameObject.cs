@@ -7,7 +7,7 @@ public class OnTapGameObject : MonoBehaviour
     [SerializeField]
     Camera cam;
 
-    [SerializeField] private float rayLength = 10.0f;
+    [SerializeField] private float rayLength = 50.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +38,9 @@ public class OnTapGameObject : MonoBehaviour
                     //Call script's public function
                     poi.OnInteracted();
                     break;
-                case "Coin":
-                    break;
-                case "":
+                case "Coins":
+                    Coin coin = hit.transform.GetComponent<Coin>();
+                    coin.OnInteracted();
                     break;
             }
         }

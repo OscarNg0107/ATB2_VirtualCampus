@@ -13,6 +13,9 @@ public class PointOfInterest : MonoBehaviour
     [SerializeField] private TMP_Text name_text;
     [SerializeField] private TMP_Text info_text;
     [SerializeField] private Image Image_ui;
+    [SerializeField] private MissionManager missionManager;
+
+    private bool interacted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,5 +35,10 @@ public class PointOfInterest : MonoBehaviour
         name_text.SetText(name);
         info_text.SetText(info);
         Image_ui.sprite = Image;
+        if (!interacted)
+        {
+            missionManager.updateMission2();
+            interacted = true;
+        }
     }
 }

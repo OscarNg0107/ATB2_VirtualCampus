@@ -10,6 +10,8 @@ public class ProgressBar : MonoBehaviour
     [SerializeField] private float current;
     [SerializeField] private Image fillBar;
     [SerializeField] private TMP_Text text;
+    [SerializeField] private GameObject completedPanel;
+    private bool Missioncomplete = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +23,28 @@ public class ProgressBar : MonoBehaviour
     {
         
     }
-    public void addCurrent()
+    public bool addCurrent()
     {
-        current += 1.0f;
+        if(Missioncomplete!= true)
+        {
+            current += 1.0f;
+            if(current < max)
+            {
+                GetCurrentPrecent();
+                return Missioncomplete;
+            }
+            else
+            {
+                GetCurrentPrecent();
+                completedPanel.SetActive(true);
+                Missioncomplete = true;
+                return Missioncomplete;
+            }
+        }
+        return Missioncomplete;
     }
 
-    public void GetCurrentPrecent()
+    private void GetCurrentPrecent()
     {
         float percent = current / max;
         fillBar.fillAmount = percent;

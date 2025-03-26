@@ -17,11 +17,14 @@ public class QRCodeManager : MonoBehaviour
     [SerializeField]
     private Camera MapCamera;
 
+    [SerializeField] private MissionManager missionManager;
+
     [SerializeField] private GameObject MapPanel;
     [SerializeField] private GameObject HidenMap;
 
     private Color alphaColor;
-    private bool firstDiscover = false;
+    private bool ReceptionfirstDiscover = false;
+    private bool PaintingfirstDiscover = false;
 
     private void Start()
     {
@@ -66,11 +69,19 @@ public class QRCodeManager : MonoBehaviour
 
                 case "Reception":
                     SetQrCodeLocTarget("Reception");
-                    if (!firstDiscover)
+                    if (!ReceptionfirstDiscover)
                     {
                         MapPanel.SetActive(true);
                         StartFading();
-                        firstDiscover = true;
+                        missionManager.updateMission1();
+                        ReceptionfirstDiscover = true;
+                    }
+                    break;
+                case "Painting":
+                    if (!PaintingfirstDiscover)
+                    {
+                        missionManager.updateMission3();
+                        PaintingfirstDiscover = true;
                     }
                     break;
             }

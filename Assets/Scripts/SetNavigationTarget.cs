@@ -31,7 +31,7 @@ public class SetNavigationTarget : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (lineToggle && targetPos != Vector3.zero)
+        if (targetPos != Vector3.zero)
         {
             NavMesh.CalculatePath(transform.position, targetPos, NavMesh.AllAreas, path);
             line.positionCount = path.corners.Length;
@@ -59,17 +59,26 @@ public class SetNavigationTarget : MonoBehaviour
     {
         targetPos = Vector3.zero;
         string selectedText = naviTargetDropDown.options[selectedID].text;
+        if (selectedText == "None")
+        {
+            targetPos = Vector3.zero;
+            HideNavLine();
+        }
         NavigationTarget currentTarget = navigationTargets.Find(x => x.targetName.ToLower().Equals(selectedText.ToLower()));
         if(currentTarget != null)
         {
             targetPos = currentTarget.targetGO.transform.position;
+            ShowNavLine();
         }
 
     }
-
-    public void ToggleLine()
+    private void ShowNavLine()
     {
-        lineToggle = !lineToggle;
-        line.enabled = lineToggle;
+        line.enabled = true;
+    }
+
+    private void HideNavLine()
+    {
+        line.enabled = false;
     }
 }
