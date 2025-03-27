@@ -3161,7 +3161,7 @@ MonoBehaviour:
   name: Learning Hub
   info: The Learning Hub is a range of inclusive services, resources and support
     to enhance your study skills and meet your learning needs.
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 3fcdad2e1ae3440e9b57284ab29f5020, type: 3}
   PoiInfoPanel: {fileID: 2112784462}
   name_text: {fileID: 489521763}
   info_text: {fileID: 1087553504}
@@ -4041,7 +4041,7 @@ MonoBehaviour:
     in your career journey. Our Student Career Coaches and Career Advisers are on
     hand to talk through your options and help you find work experience and job opportunities
     that are right for you."
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 5e0e40c3c53ae4201a37466c6d3fe6da, type: 3}
   PoiInfoPanel: {fileID: 2112784462}
   name_text: {fileID: 489521763}
   info_text: {fileID: 1087553504}
@@ -6809,13 +6809,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617071226}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.6320774, z: -0, w: 0.7749053}
-  m_LocalPosition: {x: 23.135784, y: 0, z: -7.7192116}
+  m_LocalRotation: {x: -0, y: 0.77941114, z: -0, w: 0.6265128}
+  m_LocalPosition: {x: 24.74, y: 0, z: -6.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994229360}
-  m_LocalEulerAnglesHint: {x: 0, y: -78.407, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 102.413, z: 0}
 --- !u!1 &634328156
 GameObject:
   m_ObjectHideFlags: 0
@@ -7932,7 +7932,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 1000, y: 1639}
+  m_SizeDelta: {x: 1000, y: 1700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705835810
 MonoBehaviour:
@@ -10830,7 +10830,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 600, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929755583
 MonoBehaviour:
@@ -10852,7 +10852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 204206e0f64434892b287a9fa3200b04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13750,7 +13750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 471.1, y: -1460.4}
+  m_AnchoredPosition: {x: 471.1, y: -1565.8}
   m_SizeDelta: {x: 942.2, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201479047
@@ -14117,7 +14117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -70}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1242464112
@@ -16209,7 +16209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 120}
+  m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411868933
@@ -17743,8 +17743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 471.1, y: -995.2}
-  m_SizeDelta: {x: 942.2, y: 610.4}
+  m_AnchoredPosition: {x: 471.1, y: -1047.9}
+  m_SizeDelta: {x: 942.2, y: 715.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1535085996
 MonoBehaviour:
@@ -18490,8 +18490,8 @@ PositionConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_TranslationAtRest: {x: 0, y: 0, z: 0}
-  m_TranslationOffset: {x: 0, y: 0, z: 0}
+  m_TranslationAtRest: {x: -0.05, y: 0, z: -0.000000049584123}
+  m_TranslationOffset: {x: -0.05, y: 0, z: 0}
   m_AffectTranslationX: 1
   m_AffectTranslationY: 0
   m_AffectTranslationZ: 1
@@ -18508,8 +18508,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583450557}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05, y: 0, z: -0.000000049584123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18634,7 +18634,7 @@ MonoBehaviour:
   info: We offer a variety of legal services to the community provided by our Law
     School students  and supported by legally qualified lecturing staff and local
     practitioner involvement..
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: ce8652eaab63e4c25a1f0baf85225f4d, type: 3}
   PoiInfoPanel: {fileID: 2112784462}
   name_text: {fileID: 489521763}
   info_text: {fileID: 1087553504}
@@ -19591,7 +19591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663557150
@@ -20654,7 +20654,7 @@ Transform:
   m_GameObject: {fileID: 1782247176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.40193734, z: -0, w: 0.9156672}
-  m_LocalPosition: {x: -36.3, y: 0, z: 2}
+  m_LocalPosition: {x: -37.08, y: 0, z: 2.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21252,7 +21252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 115}
+  m_AnchoredPosition: {x: 0, y: 130}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811489634
