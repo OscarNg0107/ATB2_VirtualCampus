@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using Unity.XR.CoreUtils;
 using TMPro;
 
 public class RotationAlignment : MonoBehaviour
@@ -11,6 +12,7 @@ public class RotationAlignment : MonoBehaviour
     [SerializeField] private ARSession aRSession;
     [SerializeField] private ARCameraManager aRCamera;
     [SerializeField] private ARSessionOrigin aRSessionOrigin;
+    [SerializeField] private XROrigin xROrigin;
     private float magneticHead;
     private bool doOnce = false;
 
