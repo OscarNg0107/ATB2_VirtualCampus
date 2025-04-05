@@ -11,7 +11,6 @@ public class RotationAlignment : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_TextMeshPro;
     [SerializeField] private ARSession aRSession;
     [SerializeField] private ARCameraManager aRCamera;
-    [SerializeField] private ARSessionOrigin aRSessionOrigin;
     [SerializeField] private XROrigin xROrigin;
     private float magneticHead;
     private bool doOnce = false;
@@ -46,10 +45,10 @@ public class RotationAlignment : MonoBehaviour
         {
             magneticHead = Input.compass.magneticHeading;
             Debug.Log(magneticHead);
-            aRSessionOrigin.transform.rotation = Quaternion.Euler(
-                aRSessionOrigin.transform.eulerAngles.x,
+            xROrigin.transform.eulerAngles = new Vector3(
+                xROrigin.transform.eulerAngles.x,
                 magneticHead,
-                aRSessionOrigin.transform.eulerAngles.z);
+                xROrigin.transform.eulerAngles.z);
             //Debug.Log("y rotation: " + aRSessionOrigin.transform.eulerAngles.y);
             doOnce = true;
         }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using Unity.XR.CoreUtils;
 using UnityEngine.UI;
 
 public class QRCodeManager : MonoBehaviour
@@ -9,7 +10,7 @@ public class QRCodeManager : MonoBehaviour
     [SerializeField]
     private ARSession session;
     [SerializeField]
-    private ARSessionOrigin sessionOrigin;
+    private XROrigin xROrigin;
     [SerializeField]
     ARTrackedImageManager m_TrackedImageManager;
     [SerializeField]
@@ -117,19 +118,19 @@ public class QRCodeManager : MonoBehaviour
         if (currentTarget != null)
         {
             //Reset pos and rot of ARSession
-            session.Reset();
+            //session.Reset();
 
             //Add offset for recentering
-            sessionOrigin.transform.position = currentTarget.targetGO.transform.position;
-            sessionOrigin.transform.rotation = currentTarget.targetGO.transform.rotation;
+            xROrigin.transform.position = currentTarget.targetGO.transform.position;
+            xROrigin.transform.eulerAngles = currentTarget.targetGO.transform.eulerAngles;
             resetCamePos();
         }
     }
 
     public void resetCamePos()
     {
-        MapCamera.transform.position = new Vector3(sessionOrigin.transform.position.x,
+        MapCamera.transform.position = new Vector3(xROrigin.transform.position.x,
                                                        5,
-                                                       sessionOrigin.transform.position.z);
+                                                       xROrigin.transform.position.z);
     }
 }
