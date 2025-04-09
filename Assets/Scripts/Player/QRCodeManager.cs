@@ -118,7 +118,7 @@ public class QRCodeManager : MonoBehaviour
         if (currentTarget != null)
         {
             //Reset pos and rot of ARSession
-            //session.Reset();
+            session.Reset();
 
             //Add offset for recentering
             xROrigin.transform.position = currentTarget.targetGO.transform.position;

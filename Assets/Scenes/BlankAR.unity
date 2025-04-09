@@ -1419,7 +1419,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 567
+    m_Bits: 4663
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2849,7 +2849,7 @@ Transform:
   m_GameObject: {fileID: 147548258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.56, y: 0, z: 1.37}
+  m_LocalPosition: {x: 43.1, y: 0, z: 1.1}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4873,7 +4873,7 @@ Transform:
   m_GameObject: {fileID: 387794500}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.91601306, z: -0, w: -0.40114862}
-  m_LocalPosition: {x: 8.1, y: 0, z: 13.2}
+  m_LocalPosition: {x: 8.26, y: 0, z: 13.63}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -12119,7 +12119,7 @@ Transform:
   m_GameObject: {fileID: 953723260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0521717, y: -1, z: 0.14235687}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12246,7 +12246,7 @@ GameObject:
   - component: {fileID: 983089013}
   - component: {fileID: 983089012}
   - component: {fileID: 983089011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12311,7 +12311,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 315857e4a8055fd47a5d298bfba06be9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12421,7 +12421,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3072
+    m_Bits: 7168
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 523b3d510bc58bc46916cbc6442c454e, type: 2}
   m_TargetDisplay: 0
@@ -12946,7 +12946,7 @@ GameObject:
   - component: {fileID: 1045644428}
   - component: {fileID: 1045644427}
   - component: {fileID: 1045644426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12996,7 +12996,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 315857e4a8055fd47a5d298bfba06be9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19946,7 +19946,7 @@ GameObject:
   - component: {fileID: 1583450561}
   - component: {fileID: 1583450562}
   - component: {fileID: 1583450563}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20086,7 +20086,7 @@ Transform:
   m_GameObject: {fileID: 1583450557}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0521717, y: 0, z: 0.14235687}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22163,13 +22163,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1782247176}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.40193734, z: -0, w: 0.9156672}
-  m_LocalPosition: {x: -37.08, y: 0, z: 2.72}
+  m_LocalRotation: {x: -0, y: -0.38100126, z: -0, w: 0.92457455}
+  m_LocalPosition: {x: -37.07, y: 0, z: 2.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994229360}
-  m_LocalEulerAnglesHint: {x: 0, y: -47.399, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -44.791, z: 0}
 --- !u!1 &1802635816
 GameObject:
   m_ObjectHideFlags: 0
@@ -22939,7 +22939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3cb38fbfe7c41baacc74ce8f091ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 74093816}
   rayLength: 2.5
 --- !u!4 &1844214503
 Transform:
@@ -23396,7 +23396,7 @@ GameObject:
   - component: {fileID: 1942293917}
   - component: {fileID: 1942293916}
   - component: {fileID: 1942293915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23461,7 +23461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 315857e4a8055fd47a5d298bfba06be9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23647,7 +23647,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 3072
+    m_Bits: 7168
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 1873bd097231944d497c5c2e4c67e6d5, type: 2}
   m_TargetDisplay: 0
@@ -25566,7 +25566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125299593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
